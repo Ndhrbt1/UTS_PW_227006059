@@ -130,6 +130,12 @@ img {
     margin-bottom: 1.7rem;
 }
 
+.form__div-three {
+    margin-bottom: 1.7rem;
+    display: flex;
+    align-items: center;
+}
+
 .form__icon {
     font-size: 1.5rem;
     color: var(--text-color);
@@ -159,6 +165,14 @@ img {
 
 }
 
+.form__label4 {
+    margin-right: 0.65rem;
+    top: .25rem;
+    font-size: 1rem;
+    color: var(--first-color);
+
+}
+
 .form__label3 {
     top: .25rem;
     font-size: 1rem;
@@ -166,6 +180,16 @@ img {
 
 }
 
+
+.form__outline-box {
+    background-color: rgba(110, 110, 104, 0.067);
+    /* border: 1px solid #aaa; */
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 14x;
+    width: 200px;
+    color: var(--text-color);
+}
 
 
 /*=== Label focus ===*/
@@ -223,10 +247,11 @@ img {
     color: rgb(0, 153, 0);
     appearance: none;
     cursor: pointer;
+
 }
 
 .form__select:hover {
-    background-color: rgb(255, 255, 0);
+    background-color: rgba(110, 110, 104, 0.228);
 }
 
 .form__select:focus {

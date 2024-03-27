@@ -23,14 +23,12 @@ inputs.forEach(input=>{
 
 function konfirmasi() {
    
-    var hasil = confirm("Apakah Anda yakin ingin melanjutkan?");
-    
-   
+    var hasil = confirm("Apakah Anda yakin untuk melanjutkan?");
     if (hasil) {
-        
         alert("Anda memilih OK!");
+        return true;
     } else {
-       
         alert("Anda memilih Cancel!");
+        return false;
     }
 }
