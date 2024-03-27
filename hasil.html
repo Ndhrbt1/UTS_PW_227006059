@@ -27,32 +27,32 @@
 
         <div class=" form__div-three">
           <label for="pilihan" class="form__label4" style="margin-right: 2.5rem;"> NPM: </label>
-          <div class="form__outline-box">227006059</div>
+          <div class="form__outline-box" id="npm">NPM</div>
         </div>
 
         <div class=" form__div-three">
           <label for="pilihan" class="form__label4" style="margin-right: 2rem;"> Nama: </label>
-          <div class="form__outline-box">Indah Robiatul Adawiyah</div>
+          <div class="form__outline-box" id="nama">Nama</div>
         </div>
 
         <div class=" form__div-three">
           <label for="pilihan" class="form__label4" style="margin-right: 1.5rem;"> Alamat: </label>
-          <div class="form__outline-box">Sukasetia, Cihaurbeuti, Ciamis, Jawa Barat</div>
+          <div class="form__outline-box" id="alamat">Alamat</div>
         </div>
 
         <div class=" form__div-three">
           <label for="pilihan" class="form__label4" style="margin-right: 3.2rem;"> J.K: </label>
-          <div class="form__outline-box">Perempuan</div>
+          <div class="form__outline-box" id="jk">jk</div>
         </div>
 
         <div class=" form__div-three">
           <label for="pilihan" class="form__label4" style="margin-right: 1.2rem;"> Jurusan: </label>
-          <div class="form__outline-box">Informatika</div>
+          <div class="form__outline-box" id="jurusan">jurusan</div>
         </div>
 
         <div class=" form__div-three">
           <label for="pilihan" class="form__label4" style="margin-right: 0.5rem;"> Angkatan: </label>
-          <div class="form__outline-box">2022</div>
+          <div class="form__outline-box" id="angkatan">angkatan</div>
         </div>
 
         <input type="submit" class="form__button" value="Logout">
@@ -62,6 +62,26 @@
     </div>
 
   </div>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+
+      const params = new URLSearchParams(window.location.search);
+      const npm = params.get('npm');
+      const nama = params.get('nama');
+      const alamat = params.get('alamat');
+      const gender = params.get('jk');
+      const jurusan = params.get('jurusan');
+      const angkatan = params.get('angkatan');
+
+      document.getElementById('npm').textContent = npm;
+      document.getElementById('nama').textContent = nama;
+      document.getElementById('alamat').textContent = alamat;
+      document.getElementById('jk').textContent = jk;
+      document.getElementById('jurusan').textContent = jurusan;
+      document.getElementById('angkatan').textContent = angkatan;
+    });
+  </script>
+
 
   <!-- ===== MAIN JS ===== -->
   <script src="assets/js/main.js"></script>

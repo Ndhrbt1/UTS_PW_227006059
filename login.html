@@ -32,7 +32,7 @@
 
           <div class="form__div-input">
             <label for="" class="form__label">NPM</label>
-            <input type="text" class="form__input">
+            <input name="npm" type="text" class="form__input">
           </div>
         </div>
 
@@ -43,7 +43,7 @@
 
           <div class="form__div-input">
             <label for="" class="form__label">Nama</label>
-            <input type="text" class="form__input">
+            <input name="nama" type="text" class="form__input">
           </div>
         </div>
         <div class="form__div">
@@ -53,7 +53,7 @@
 
           <div class="form__div-input">
             <label for="" class="form__label">Alamat</label>
-            <input type="text" class="form__input">
+            <input type="text" class="form__input" name="alamat">
           </div>
         </div>
 
@@ -73,11 +73,11 @@
         <div class="form__div-two">
 
           <label for="pilihan" class="form__label2"> Jurusan: </label>
-          <select class="form__select">
-            <option value="Option 1">Informatika</option>
-            <option value="Option 2">Sistem Informasi</option>
-            <option value="Option 3">Teknik Sipil</option>
-            <option value="Option 4">Teknik Elektro</option>
+          <select name="jurusan" class="form__select" required>
+            <option value="Informatika">Informatika</option>
+            <option value="Sistem Informasi">Sistem Informasi</option>
+            <option value="Teknik Sipil">Teknik Sipil</option>
+            <option value="Teknik Elektro">Teknik Elektro</option>
 
           </select>
           <span class="focus"></span>
@@ -86,11 +86,11 @@
         <div class="form__div-two">
 
           <label for="pilihan" class="form__label3">Angkatan:</label>
-          <select class="form__select">
-            <option value="Option 1">2024</option>
-            <option value="Option 2">2023</option>
-            <option value="Option 3">2022</option>
-            <option value="Option 4">2021</option>
+          <select name="angkatan" class="form__select" required>
+            <option value="2024">2024</option>
+            <option value="2023">2023</option>
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
 
           </select>
           <span class="focus"></span>
@@ -105,6 +105,8 @@
     </div>
 
   </div>
+
+
 
   <!-- ===== MAIN JS ===== -->
   <script src="assets/js/main.js"></script>
